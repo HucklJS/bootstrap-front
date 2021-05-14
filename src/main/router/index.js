@@ -1,5 +1,9 @@
 import { routesInit } from './router.core';
 
-export const routes = {};
+import {LOGIN_ROUTE_PATH, LoginRouter} from '../../core/login'
+
+export const routes = {
+  [LOGIN_ROUTE_PATH]: LoginRouter
+};
 
 export const Router = routesInit(routes);
