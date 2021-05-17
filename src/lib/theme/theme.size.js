@@ -16,4 +16,7 @@ export const THEME_SIZE = {
     DEFAULT: '16px',
     SMALL: '14px'
   },
+  RADIUS: {
+    DEFAULT: '5px'
+  }
 };
