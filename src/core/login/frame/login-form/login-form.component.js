@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { FieldPrimary } from '../../../../lib/elements/field';
 import { FieldLayout } from '../../../../lib/elements/layout'
-import { SubmitBtn } from '../../../../lib/elements/btns'
+import { SubmitButton } from '../../../../lib/elements/buttons'
 
 export const LoginFormComponent = (props) => {
   const {
@@ -58,9 +58,9 @@ export const LoginFormComponent = (props) => {
             error={isFieldErr(fieldPassword)}
           />
         </FieldLayout>
-        <SubmitBtn type="submit" disabled={isSubmitDisabled()}>
+        <SubmitButton type="submit" disabled={isSubmitDisabled()}>
           Submit
-        </SubmitBtn>
+        </SubmitButton>
         {isPending && 'Loading...'}
         {isError && errorMessage}
       </Container>
