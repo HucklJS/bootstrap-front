@@ -26,7 +26,7 @@ export function FieldPrimary(props: FieldPrimaryPropsType) {
         type={type}
         onChange={onChange}
         onBlur={onBlur}
-        value={value}
+        value={text(value)}
         name={name}
         placeholder={text(placeholderTid)}
       />
