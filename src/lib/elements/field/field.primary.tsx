@@ -1,8 +1,8 @@
 import React from 'react';
 
-import {TextSecondary} from '../text'
-import {spacing, THEME_COLOR, THEME_SIZE} from '../../theme'
-import {FieldPrimaryPropsType} from './field.type'
+import {TextSecondary} from '../text';
+import {spacing, THEME_COLOR, THEME_SIZE} from '../../theme';
+import {FieldPrimaryPropsType} from './field.type';
 
 import {text} from '../../common/text'
 import styled from 'styled-components';
@@ -30,7 +30,7 @@ export function FieldPrimary(props: FieldPrimaryPropsType) {
         name={name}
         placeholder={text(placeholderTid)}
       />
-      {error && <ErrorMessage>{error}</ErrorMessage>}
+      {error && <ErrorMessage>{text(error)}</ErrorMessage>}
     </Container>
   )
 }

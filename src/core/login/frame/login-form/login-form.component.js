@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { FieldPrimary } from '../../../../lib/elements/field';
 import { FieldLayout } from '../../../../lib/elements/layout'
 import { SubmitButton } from '../../../../lib/elements/buttons'
+import { ErrorMessage, PendingMessage } from '../../../../lib/elements/messages';
+import { Loader } from '../../../../lib/elements/loader';
 
 export const LoginFormComponent = (props) => {
   const {
@@ -35,7 +37,7 @@ export const LoginFormComponent = (props) => {
   return (
     <form onSubmit={handleSubmit}>
       <Container>
-        {pageLoading && 'pageLoading'}
+        {pageLoading && <Loader/>}
         <FieldLayout>
           <FieldPrimary
             titleTid={'SIGNUP.SIGNUP_FORM.FIELD.LOGIN.TITLE'}
@@ -61,8 +63,9 @@ export const LoginFormComponent = (props) => {
         <SubmitButton type="submit" disabled={isSubmitDisabled()}>
           Submit
         </SubmitButton>
-        {isPending && 'Loading...'}
-        {isError && errorMessage}
+
+        <PendingMessage isPending={isPending} pendingMessage="Loading..."/>
+        <ErrorMessage isError={isError} errorMessage={errorMessage}/>
       </Container>
     </form>
   );
