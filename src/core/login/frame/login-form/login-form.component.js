@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { FieldPrimary } from '../../../../lib/elements/field';
 import { FieldLayout } from '../../../../lib/elements/layout'
 import { SubmitButton } from '../../../../lib/elements/buttons'
