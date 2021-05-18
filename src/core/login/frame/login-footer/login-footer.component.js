@@ -9,7 +9,7 @@ export function LoginFooterComponent(props) {
     <div>
       <Link href="/signup">
         <ToSignUpLink>
-          {text(props.children)}
+          {text(props.tid)}
         </ToSignUpLink>
       </Link>
     </div>

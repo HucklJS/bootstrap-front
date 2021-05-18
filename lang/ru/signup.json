@@ -9,6 +9,12 @@
                 "TITLE": "Password",
                 "PLACEHOLDER": "Your password"
             }
+        },
+        "HEADER": {
+            "TITLE": "Авторизация"
+        },
+        "FOOTER": {
+            "TITLE": "Нет аккаунта? Регистрация."
         }
     }
 }

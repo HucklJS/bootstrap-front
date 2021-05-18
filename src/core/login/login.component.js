@@ -7,9 +7,13 @@ import {LoginFooterContainer} from './frame/login-footer';
 export function LoginComponent(props) {
   return (
     <div>
-      <LoginHeaderContainer>Авторизация</LoginHeaderContainer>
+      <LoginHeaderContainer
+        tid={'SIGNUP.SIGNUP_FORM.HEADER.TITLE'}
+      />
       <LoginFormContainer {...props}/>
-      <LoginFooterContainer>Нет аккаунта? Регистрация.</LoginFooterContainer>
+      <LoginFooterContainer
+        tid={'SIGNUP.SIGNUP_FORM.FOOTER.TITLE'}
+      />
     </div>
   );
 }
