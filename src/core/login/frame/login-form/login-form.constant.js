@@ -1,0 +1,1 @@
+export const LOGIN_FORM_PENDING_MESSAGE = "Loading...";
