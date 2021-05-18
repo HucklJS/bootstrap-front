@@ -15,6 +15,9 @@
         },
         "FOOTER": {
             "TITLE": "Нет аккаунта? Регистрация."
+        },
+        "SUBMIT_BUTTON": {
+            "TITLE": "Submit"
         }
     }
 }

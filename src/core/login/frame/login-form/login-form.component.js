@@ -61,7 +61,11 @@ export const LoginFormComponent = (props) => {
             error={isFieldErr(fieldPassword)}
           />
         </FieldLayout>
-        <SubmitButton type="submit" disabled={isSubmitDisabled()}>
+        <SubmitButton
+          type="submit"
+          disabled={isSubmitDisabled()}
+          titleTid={'SIGNUP.SIGNUP_FORM.SUBMIT_BUTTON.TITLE'}
+        >
           Submit
         </SubmitButton>
 
