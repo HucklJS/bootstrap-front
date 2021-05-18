@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { FieldPrimary } from '../../../../lib/elements/field';
 import { FieldLayout } from '../../../../lib/elements/layout'
-import { SubmitButton } from '../../../../lib/elements/buttons'
-import { ErrorMessage, PendingMessage } from '../../../../lib/elements/messages';
+import { SubmitButton } from '../../../../lib/elements/button'
+import { ErrorMessage, PendingMessage } from '../../../../lib/elements/message';
 import { Loader } from '../../../../lib/elements/loader';
 import { LOGIN_FORM_PENDING_MESSAGE } from './login-form.constant';
 
