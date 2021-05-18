@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { text } from '../../common/text';
+import { THEME_COLOR, THEME_SIZE } from '../../theme';
 
 
 export const SubmitButton = props => {
@@ -12,6 +13,6 @@ export const SubmitButton = props => {
 };
 
 const Button = styled.button`
-  background: #ddd;
-  border-radius: 15px;
+  background: ${THEME_COLOR.SUBMIT_BUTTON_BACKGROUND};
+  border-radius: ${THEME_SIZE.RADIUS.BIG};
 `;
