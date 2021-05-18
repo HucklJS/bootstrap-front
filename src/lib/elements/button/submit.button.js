@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import { text } from '../../common/text';
 import { THEME_COLOR, THEME_SIZE } from '../../theme';
 import { TextSecondary } from '../text';
 
