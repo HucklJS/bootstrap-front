@@ -5,6 +5,7 @@ import { FieldLayout } from '../../../../lib/elements/layout'
 import { SubmitButton } from '../../../../lib/elements/button'
 import { ErrorMessage, PendingMessage } from '../../../../lib/elements/message';
 import { Loader } from '../../../../lib/elements/loader';
+import { spacing } from '../../../../lib/theme';
 
 export const LoginFormComponent = (props) => {
   const {
@@ -64,9 +65,7 @@ export const LoginFormComponent = (props) => {
           type="submit"
           disabled={isSubmitDisabled()}
           titleTid={'SIGNUP.SIGNUP_FORM.SUBMIT_BUTTON.TITLE'}
-        >
-          Submit
-        </SubmitButton>
+        />
 
         <PendingMessage isPending={isPending} pendingMessageTId={'SIGNUP.SIGNUP_FORM.PENDING_MESSAGE.TITLE'}/>
         <ErrorMessage isError={isError} errorMessage={errorMessage}/>
@@ -77,7 +76,7 @@ export const LoginFormComponent = (props) => {
 
 const Container = styled.div`
   display: grid;
-  gap: 12px;
+  gap: ${spacing(3)};
 `;
 
 
