@@ -3,7 +3,10 @@
         "FIELD": {
             "LOGIN": {
                 "TITLE": "Login",
-                "PLACEHOLDER": "Your login"
+                "PLACEHOLDER": "Your login",
+                "ERROR": {
+                    "TITLE": "Required"
+                }
             },
             "PASSWORD": {
                 "TITLE": "Password",
@@ -18,6 +21,9 @@
         },
         "SUBMIT_BUTTON": {
             "TITLE": "Submit"
+        },
+        "PENDING_MESSAGE": {
+            "TITLE": "Loading..."
         }
     }
 }

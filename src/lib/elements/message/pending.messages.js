@@ -1,19 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { THEME_COLOR } from '../../theme';
-import { text } from '../../common/text';
+import { TextSecondary } from '../text';
 
 
 export function PendingMessage(props) {
   const {
     isPending,
-    pendingMessage
+    pendingMessageTId
   } = props;
 
   return (
     isPending &&
     <Pending>
-      {text(pendingMessage)}
+      <TextSecondary tid={pendingMessageTId}/>
     </Pending>
   );
 }

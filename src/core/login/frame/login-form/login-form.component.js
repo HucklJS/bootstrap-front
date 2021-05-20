@@ -5,7 +5,6 @@ import { FieldLayout } from '../../../../lib/elements/layout'
 import { SubmitButton } from '../../../../lib/elements/button'
 import { ErrorMessage, PendingMessage } from '../../../../lib/elements/message';
 import { Loader } from '../../../../lib/elements/loader';
-import { LOGIN_FORM_PENDING_MESSAGE } from './login-form.constant';
 
 export const LoginFormComponent = (props) => {
   const {
@@ -69,7 +68,7 @@ export const LoginFormComponent = (props) => {
           Submit
         </SubmitButton>
 
-        <PendingMessage isPending={isPending} pendingMessage={LOGIN_FORM_PENDING_MESSAGE}/>
+        <PendingMessage isPending={isPending} pendingMessageTId={'SIGNUP.SIGNUP_FORM.PENDING_MESSAGE.TITLE'}/>
         <ErrorMessage isError={isError} errorMessage={errorMessage}/>
       </Container>
     </form>
